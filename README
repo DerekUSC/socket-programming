@@ -1,0 +1,19 @@
+Dejia Hao
+3293161091
+I have completed all the assignment and show them in terminal
+client.cpp: set up the connection between client and aws, send and receieve information
+aws.cpp: act as the core of the network, get the information from serverA, serverB and client, send these information to serverC and get the estimation value.
+monitor.cpp: monitor all the process
+serverA: database
+serverB: database
+serverC: calculation
+
+client sends link id, file size and signal power to AWS
+AWS send these information to monitor
+AWS send link_id to serverA/B and receive bandwidth, length, velocity and noise power
+AWS send all these information to serverC, which sends back Tt, Tp and delay
+AWS send the delay information to monitor and client
+
+notice: I use "FILE *databaseA = fopen("database_a.csv","r");" to open and read the database file
+
+no
